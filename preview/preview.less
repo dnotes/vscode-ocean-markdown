@@ -1,0 +1,526 @@
+
+@font_main:               Georgia serif;
+@font_header:             Georgia serif;
+@font_subheader:          Garamond serif;
+@font_monospace:          monospace;
+
+@h1_size:       24pt;
+@h2_size:       20pt;
+@h3_size:       18pt;
+@h4_size:       16pt;
+@h5_size:       14pt;
+@h6_size:       14pt;
+@font_size:     12pt;
+@line_height:   1.2em;
+
+// Color: white
+@main_text_color: lighten(black, 10%);
+@main_background_color: darken(white, 1%);
+@secondary_color: DarkOliveGreen;
+@grayed_color: fadeout(@main_text_color, 30%);
+@link_color: navy;
+@author1_color: #804040; //#805A5A; //maroon;
+@author2_color: #466446; //darkgreen;
+@author3_color: #294E66; //#294E66; //#5C7483;
+
+@color_title_ocean: #1a1a1a;
+
+// reading point
+@audio_highlight: rgba(255,230,0, .5);
+
+// higlighter pens
+@highlighter_red: red;
+@highlighter_green: green;
+@highlighter_blue: blue;
+@highlighter_purple: purple;
+
+// Color: sepia
+@sepia_text_color: black;
+@sepia_background_color: #F6EEE5;
+
+// Color: night
+@night_text_color: darken(white, 10%);
+@night_background_color: black;
+@night_secondary_color: lighten(desaturate(DarkOliveGreen, 20%), 20%);
+@night_grayed_color: fadeout(@night_text_color, 30%);
+@night_link_color: lighten(desaturate(blue, 70%), 20%);
+@night_author1_color: lighten(red, 25%);
+@night_author2_color: lighten(desaturate(darkgreen, 80%), 40%);
+@night_author3_color: lighten(#306383, 30%);
+
+// reading point
+@night_audio_highlight: rgba(255,230,0, 1);
+
+// paddings
+@normal_padding: 10px;
+@hr_normal_margin: 20px;
+@list_normal_padding: 80px;
+@extra_padding: @normal_padding + 10;
+@extra_padding-vertical: @normal_padding + 30;
+@outer_padding-vertical: 80px;
+@outer_padding-vertical-extra: @outer_padding-vertical + 80;
+
+// Fonts sizes
+@font_title_size: 50pt;
+@font_subtitle_size: 27pt;
+@font_author_size: 27pt;
+@font_copyright_size: 15pt;
+@font_translator_size: 27pt;
+@font_header_size: 23pt;
+
+// ============================================================================
+// Mixins
+// ============================================================================
+
+.clearfix() {
+  &:after {
+    content: "";
+    display: block;
+    width: 100%;
+  }
+}
+
+#roles() {
+  .dedication() {
+    &.dedication {
+      width: 30%;
+      margin-left: auto;
+      margin-right: auto;
+      font-style: italic;
+      text-align: center;
+    }
+  }
+  .signature() {
+    &.signature { 
+      text-align: right;
+      padding-right: 3em;
+    }
+  }
+  .reference() {
+    &.reference {
+      font-size: 75%;
+      color: rgba(26, 26, 26, 0.7);
+      text-align: right;
+    }
+  }
+  .centerquote() {
+    &.centerquote {
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .editor-note() {
+    &.editor-note {
+      font-style: normal; 
+      color: @grayed_color;
+    }
+  }
+  .sitalcent() {
+    &.sitalcent { font-style: italic; }
+  }
+  .preamble() {
+    &.preamble { font-style: italic; }
+  }
+  .prayer() {
+    &.prayer { font-style: italic; }
+  }
+  .author() {
+    &.author {
+      font-size: @font_author_size;
+      color: @secondary_color;
+      .sizing(@font_author_size);
+    }
+  }
+  .translator() {
+    &.translator {
+      font-size: @font_translator_size;
+      .sizing(@font_translator_size);
+    }
+  }
+  .copyright() {
+    &.copyright {
+      font-size: @font_copyright_size;
+      line-height: @font_copyright_size;
+      color: @grayed_color;
+    }
+  }
+  .verse() {
+    &.verse {
+      white-space: pre-wrap;
+    }
+  }
+  .list {
+    &.list {
+      white-space: pre-line;
+    }
+  }
+  .pre {
+    &.pre {
+      white-space: pre;
+      font-family: @font_monospace;
+    }
+  }
+  .all() { #roles.dedication(); #roles.signature(); #roles.reference(); #roles.centerquote(); #roles.editor-note(); 
+          #roles.sitalcent(); #roles.preamble(); #roles.prayer(); 
+          #roles.author(); #roles.translator(); #roles.copyright(); 
+          #roles.verse(); #roles.list(); #roles.pre(); }
+}
+
+#headings() {
+  .title() {
+    &.title { 
+      font-size: @font_title_size;
+      text-align: center;
+      .sizing(@font_title_size);
+    }
+  }
+  .subtitle() {
+    &.subtitle {
+      font-variant: small-caps;
+      font-weight: normal;
+      font-size: @font_subtitle_size;
+      .sizing(@font_subtitle_size);
+    }
+  }
+  .header() {
+    &.header { 
+      font-size: @font_header_size;
+      text-align: center;
+      .sizing(@font_header_size);
+    }
+  }
+}
+
+#styles() {
+  .smallcaps() {
+    &.smallcaps { font-variant: small-caps; text-transform: none; }
+  }
+  .allcaps() {
+    &.allcaps { text-transform: uppercase; }
+  }
+  .bold() {
+    &.bold { font-weight: bold; }
+  }
+  .italic() {
+    &.italic { font-style: italic; }
+  }
+  .underline() {
+    &.underline { text-decoration: underline; }
+    &.strikethrough { text-decoration: line-through; }
+    &.underline.strikethrough { text-decoration: line-through underline; }
+  }
+  .all() {
+    #styles.smallcaps(); #styles.allcaps(); #styles.bold(); #styles.italic(); #styles.underline();
+  }
+}
+
+.alignment() {
+  &.right { text-align: right; }
+  &.left { text-align: left; }
+  &.center { text-align: center; }
+  &.justify { text-align: justify; .clearfix(); }
+}
+
+.indentation() {
+  @levels: range(9);
+  each(@levels, {
+    &.indent-@{value} {
+      margin-left: 1em * @value;
+    }
+  })
+}
+
+.sizing(@current) {
+  &.small { font-size: @current * 0.85; }
+  &.large { font-size: @current * 1.15; }
+}
+
+// ============================================================================
+// Basics
+// ============================================================================
+
+body {
+  font-family: @font_main;
+  font-size: @font_size;
+  line-height: @line_height;
+}
+
+.vscode-body {
+
+pre {
+  color: inherit;
+  background: rgba(0,0,0,.1) !important;
+  font-family: @font_monospace;
+  code {
+    font-size: 10pt !important;
+    color: inherit;
+  }
+}
+
+// ============================================================================
+// Paragraphs and Blocks
+// ============================================================================
+
+p {
+  #roles.all();
+  #styles.all();
+  .alignment();
+  .indentation();
+}
+
+span {
+  #styles.all();
+}
+
+// ============================================================================
+// Headings
+// ============================================================================
+
+h1,h2,h3,h4,h5,h6 {
+  #styles.all();
+  .alignment();
+  .indentation();
+}
+h2,h3,h4,h5,h6 {
+  #headings.subtitle();
+  #headings.header();
+}
+h1 {
+  font-size: @h1_size;
+  #headings.title();
+  .sizing(@h1_size);
+}
+h2 {
+  font-size: @h2_size;
+  .sizing(@h2_size);
+}
+h3 {
+  font-size: @h3_size;
+  .sizing(@h3_size);
+}
+h4 {
+  font-size: @h3_size;
+  .sizing(@h3_size);
+}
+h5 {
+  font-size: @h3_size;
+  .sizing(@h3_size);
+}
+h6 {
+  font-size: @h3_size;
+  .sizing(@h3_size);
+}
+
+// ============================================================================
+// Breaks
+// ============================================================================
+
+hr {
+  display: block; 
+  border: 0;
+  margin: @hr_normal_margin;
+  height: 35px;
+  text-align: center;
+  background: url(hr.svg) 50% 50% no-repeat;
+  opacity: .5;
+
+  &.small {
+    background: url(hr2.png) 50% 50% no-repeat;
+    background-size: 54px;
+  }
+  &.large {
+    background: url(hr.svg) 50% 50% no-repeat;
+    background-size: 600px;
+  }
+}
+
+// ============================================================================
+// Links and Anchors (Page & Paragraph Numbers)
+// ============================================================================
+
+a[id^="¶"] {
+  float: left;
+  padding-top: 10px;
+  padding-left: 5px;
+  color: rgba(26, 26, 26, 0.7);
+  font-size: 12px;
+  cursor: pointer;
+}
+
+[data-pg]::before {
+  content: 'pg ' attr(data-pg);
+  color: rgba(26, 26, 26, 0.7);
+  padding: 0;
+  padding-left: 3px;
+  padding-right: 3px;
+  /*float: right;*/
+  margin-right: -4em;
+  font-size: 8pt;
+  font-style: normal;
+  position: absolute;
+  right: 12px;
+}
+
+// ============================================================================
+// Lists
+// ============================================================================
+
+span.li {
+  display: block;
+  @levels: range(9);
+  each(@levels, {
+    &.li@{value} {
+      margin-left: 1em * (@value - 1);
+    }
+  })
+}
+
+// ============================================================================
+// Footnotes
+// ============================================================================
+
+.footnotes {
+  margin-left: 70px;
+  margin-right: 40px;
+  font-family: GentiumPlus, 'Georgia', 'serif';
+  color: rgba(26, 26, 26, 0.7);
+  font-size: 80%;
+
+  .-hidden {
+    display: none;
+  }
+
+  .-num {
+    display: inline-block;
+    font-size: 80%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .-text {
+    display: inline-block;
+  }
+}
+
+.title, .header {
+  margin-left: 40px;
+  margin-right: 45px;
+  position: relative;
+}
+
+// QUESTIONS
+
+.rulebelow {
+  text-transform: uppercase;
+}
+.bookgraphic {
+  text-transform: uppercase;
+}
+
+/***** Global block width *****/
+.width-80 {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.width-65 {
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.width-50 {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.width-45 {
+  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.width-30 {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/***** Global authors *****/
+.sacred, .bible, .muhammad,
+.quran, .jesus, .muh,
+[data-author] {
+  color: @main_text_color;
+  font-style: italic;
+}
+.baha, [data-author="baha"] {
+  color: @author1_color;
+  font-style: italic;
+}
+.bab, [data-author="bab"] {
+  color: @author2_color;
+  font-style: italic;
+}
+.abd, [data-author="abd"] {
+  color: @author3_color;
+  font-style: italic;
+}
+.shoghi, [data-author="shoghi"] {
+  /*color: #333333;*/
+  /*font-style: italic;*/
+  color: @main_text_color;
+  font-style: normal;
+}
+.ali, [data-author="ali"],
+.tradition, [data-author="tradition"],
+.husayn, [data-author="husayn"] {
+  color: @main_text_color;
+  font-style: normal;
+}
+
+.blockquote, .prayer { // these must always be within a div.par, not <p>
+  padding-left: 3em; padding-right: 1em;
+}
+
+
+/***** Illustrations *****/
+@normal_img_height: 65vh;
+
+img {
+  max-height: @normal_img_height;
+  margin: 10px auto;
+  /*margin: 10px auto !important;*/
+  text-align: center;
+  display: block;
+}
+
+.illustration {
+  &.left {
+    float: left;
+  }
+  &.right {
+    float: right;
+  }
+}
+img.illustration {
+  &.x-small {
+    max-height: @normal_img_height - 40;
+  }
+  &.small {
+    max-height: @normal_img_height - 20;
+  }
+  &.large {
+    max-height: @normal_img_height + 20;
+  }
+  &.x-large {
+    max-height: @normal_img_height + 40;
+  }
+}
+div.illustration {
+  width: 100%;
+  padding: 0 60px 2em;
+  &.content-description {
+    padding: 0px;
+  }
+}
+
+}

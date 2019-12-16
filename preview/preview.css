@@ -1,0 +1,657 @@
+body {
+  font-family: Georgia serif;
+  font-size: 12pt;
+  line-height: 1.2em;
+}
+.vscode-body {
+  /***** Global block width *****/
+  /***** Global authors *****/
+  /***** Illustrations *****/
+}
+.vscode-body pre {
+  color: inherit;
+  background: rgba(0, 0, 0, 0.1) !important;
+  font-family: monospace;
+}
+.vscode-body pre code {
+  font-size: 10pt !important;
+  color: inherit;
+}
+.vscode-body p.dedication {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  font-style: italic;
+  text-align: center;
+}
+.vscode-body p.signature {
+  text-align: right;
+  padding-right: 3em;
+}
+.vscode-body p.reference {
+  font-size: 75%;
+  color: rgba(26, 26, 26, 0.7);
+  text-align: right;
+}
+.vscode-body p.centerquote {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.vscode-body p.editor-note {
+  font-style: normal;
+  color: rgba(26, 26, 26, 0.7);
+}
+.vscode-body p.sitalcent {
+  font-style: italic;
+}
+.vscode-body p.preamble {
+  font-style: italic;
+}
+.vscode-body p.prayer {
+  font-style: italic;
+}
+.vscode-body p.author {
+  font-size: 27pt;
+  color: DarkOliveGreen;
+}
+.vscode-body p.author.small {
+  font-size: 22.95pt;
+}
+.vscode-body p.author.large {
+  font-size: 31.05pt;
+}
+.vscode-body p.translator {
+  font-size: 27pt;
+}
+.vscode-body p.translator.small {
+  font-size: 22.95pt;
+}
+.vscode-body p.translator.large {
+  font-size: 31.05pt;
+}
+.vscode-body p.copyright {
+  font-size: 15pt;
+  line-height: 15pt;
+  color: rgba(26, 26, 26, 0.7);
+}
+.vscode-body p.verse {
+  white-space: pre-wrap;
+}
+.vscode-body p.list {
+  white-space: pre-line;
+}
+.vscode-body p.pre {
+  white-space: pre;
+  font-family: monospace;
+}
+.vscode-body p.smallcaps {
+  font-variant: small-caps;
+  text-transform: none;
+}
+.vscode-body p.allcaps {
+  text-transform: uppercase;
+}
+.vscode-body p.bold {
+  font-weight: bold;
+}
+.vscode-body p.italic {
+  font-style: italic;
+}
+.vscode-body p.underline {
+  text-decoration: underline;
+}
+.vscode-body p.strikethrough {
+  text-decoration: line-through;
+}
+.vscode-body p.underline.strikethrough {
+  text-decoration: line-through underline;
+}
+.vscode-body p.right {
+  text-align: right;
+}
+.vscode-body p.left {
+  text-align: left;
+}
+.vscode-body p.center {
+  text-align: center;
+}
+.vscode-body p.justify {
+  text-align: justify;
+}
+.vscode-body p.justify:after {
+  content: "";
+  display: block;
+  width: 100%;
+}
+.vscode-body p.indent-1 {
+  margin-left: 1em;
+}
+.vscode-body p.indent-2 {
+  margin-left: 2em;
+}
+.vscode-body p.indent-3 {
+  margin-left: 3em;
+}
+.vscode-body p.indent-4 {
+  margin-left: 4em;
+}
+.vscode-body p.indent-5 {
+  margin-left: 5em;
+}
+.vscode-body p.indent-6 {
+  margin-left: 6em;
+}
+.vscode-body p.indent-7 {
+  margin-left: 7em;
+}
+.vscode-body p.indent-8 {
+  margin-left: 8em;
+}
+.vscode-body p.indent-9 {
+  margin-left: 9em;
+}
+.vscode-body span.smallcaps {
+  font-variant: small-caps;
+  text-transform: none;
+}
+.vscode-body span.allcaps {
+  text-transform: uppercase;
+}
+.vscode-body span.bold {
+  font-weight: bold;
+}
+.vscode-body span.italic {
+  font-style: italic;
+}
+.vscode-body span.underline {
+  text-decoration: underline;
+}
+.vscode-body span.strikethrough {
+  text-decoration: line-through;
+}
+.vscode-body span.underline.strikethrough {
+  text-decoration: line-through underline;
+}
+.vscode-body h1.smallcaps,
+.vscode-body h2.smallcaps,
+.vscode-body h3.smallcaps,
+.vscode-body h4.smallcaps,
+.vscode-body h5.smallcaps,
+.vscode-body h6.smallcaps {
+  font-variant: small-caps;
+  text-transform: none;
+}
+.vscode-body h1.allcaps,
+.vscode-body h2.allcaps,
+.vscode-body h3.allcaps,
+.vscode-body h4.allcaps,
+.vscode-body h5.allcaps,
+.vscode-body h6.allcaps {
+  text-transform: uppercase;
+}
+.vscode-body h1.bold,
+.vscode-body h2.bold,
+.vscode-body h3.bold,
+.vscode-body h4.bold,
+.vscode-body h5.bold,
+.vscode-body h6.bold {
+  font-weight: bold;
+}
+.vscode-body h1.italic,
+.vscode-body h2.italic,
+.vscode-body h3.italic,
+.vscode-body h4.italic,
+.vscode-body h5.italic,
+.vscode-body h6.italic {
+  font-style: italic;
+}
+.vscode-body h1.underline,
+.vscode-body h2.underline,
+.vscode-body h3.underline,
+.vscode-body h4.underline,
+.vscode-body h5.underline,
+.vscode-body h6.underline {
+  text-decoration: underline;
+}
+.vscode-body h1.strikethrough,
+.vscode-body h2.strikethrough,
+.vscode-body h3.strikethrough,
+.vscode-body h4.strikethrough,
+.vscode-body h5.strikethrough,
+.vscode-body h6.strikethrough {
+  text-decoration: line-through;
+}
+.vscode-body h1.underline.strikethrough,
+.vscode-body h2.underline.strikethrough,
+.vscode-body h3.underline.strikethrough,
+.vscode-body h4.underline.strikethrough,
+.vscode-body h5.underline.strikethrough,
+.vscode-body h6.underline.strikethrough {
+  text-decoration: line-through underline;
+}
+.vscode-body h1.right,
+.vscode-body h2.right,
+.vscode-body h3.right,
+.vscode-body h4.right,
+.vscode-body h5.right,
+.vscode-body h6.right {
+  text-align: right;
+}
+.vscode-body h1.left,
+.vscode-body h2.left,
+.vscode-body h3.left,
+.vscode-body h4.left,
+.vscode-body h5.left,
+.vscode-body h6.left {
+  text-align: left;
+}
+.vscode-body h1.center,
+.vscode-body h2.center,
+.vscode-body h3.center,
+.vscode-body h4.center,
+.vscode-body h5.center,
+.vscode-body h6.center {
+  text-align: center;
+}
+.vscode-body h1.justify,
+.vscode-body h2.justify,
+.vscode-body h3.justify,
+.vscode-body h4.justify,
+.vscode-body h5.justify,
+.vscode-body h6.justify {
+  text-align: justify;
+}
+.vscode-body h1.justify:after,
+.vscode-body h2.justify:after,
+.vscode-body h3.justify:after,
+.vscode-body h4.justify:after,
+.vscode-body h5.justify:after,
+.vscode-body h6.justify:after {
+  content: "";
+  display: block;
+  width: 100%;
+}
+.vscode-body h1.indent-1,
+.vscode-body h2.indent-1,
+.vscode-body h3.indent-1,
+.vscode-body h4.indent-1,
+.vscode-body h5.indent-1,
+.vscode-body h6.indent-1 {
+  margin-left: 1em;
+}
+.vscode-body h1.indent-2,
+.vscode-body h2.indent-2,
+.vscode-body h3.indent-2,
+.vscode-body h4.indent-2,
+.vscode-body h5.indent-2,
+.vscode-body h6.indent-2 {
+  margin-left: 2em;
+}
+.vscode-body h1.indent-3,
+.vscode-body h2.indent-3,
+.vscode-body h3.indent-3,
+.vscode-body h4.indent-3,
+.vscode-body h5.indent-3,
+.vscode-body h6.indent-3 {
+  margin-left: 3em;
+}
+.vscode-body h1.indent-4,
+.vscode-body h2.indent-4,
+.vscode-body h3.indent-4,
+.vscode-body h4.indent-4,
+.vscode-body h5.indent-4,
+.vscode-body h6.indent-4 {
+  margin-left: 4em;
+}
+.vscode-body h1.indent-5,
+.vscode-body h2.indent-5,
+.vscode-body h3.indent-5,
+.vscode-body h4.indent-5,
+.vscode-body h5.indent-5,
+.vscode-body h6.indent-5 {
+  margin-left: 5em;
+}
+.vscode-body h1.indent-6,
+.vscode-body h2.indent-6,
+.vscode-body h3.indent-6,
+.vscode-body h4.indent-6,
+.vscode-body h5.indent-6,
+.vscode-body h6.indent-6 {
+  margin-left: 6em;
+}
+.vscode-body h1.indent-7,
+.vscode-body h2.indent-7,
+.vscode-body h3.indent-7,
+.vscode-body h4.indent-7,
+.vscode-body h5.indent-7,
+.vscode-body h6.indent-7 {
+  margin-left: 7em;
+}
+.vscode-body h1.indent-8,
+.vscode-body h2.indent-8,
+.vscode-body h3.indent-8,
+.vscode-body h4.indent-8,
+.vscode-body h5.indent-8,
+.vscode-body h6.indent-8 {
+  margin-left: 8em;
+}
+.vscode-body h1.indent-9,
+.vscode-body h2.indent-9,
+.vscode-body h3.indent-9,
+.vscode-body h4.indent-9,
+.vscode-body h5.indent-9,
+.vscode-body h6.indent-9 {
+  margin-left: 9em;
+}
+.vscode-body h2.subtitle,
+.vscode-body h3.subtitle,
+.vscode-body h4.subtitle,
+.vscode-body h5.subtitle,
+.vscode-body h6.subtitle {
+  font-variant: small-caps;
+  font-weight: normal;
+  font-size: 27pt;
+}
+.vscode-body h2.subtitle.small,
+.vscode-body h3.subtitle.small,
+.vscode-body h4.subtitle.small,
+.vscode-body h5.subtitle.small,
+.vscode-body h6.subtitle.small {
+  font-size: 22.95pt;
+}
+.vscode-body h2.subtitle.large,
+.vscode-body h3.subtitle.large,
+.vscode-body h4.subtitle.large,
+.vscode-body h5.subtitle.large,
+.vscode-body h6.subtitle.large {
+  font-size: 31.05pt;
+}
+.vscode-body h2.header,
+.vscode-body h3.header,
+.vscode-body h4.header,
+.vscode-body h5.header,
+.vscode-body h6.header {
+  font-size: 23pt;
+  text-align: center;
+}
+.vscode-body h2.header.small,
+.vscode-body h3.header.small,
+.vscode-body h4.header.small,
+.vscode-body h5.header.small,
+.vscode-body h6.header.small {
+  font-size: 19.55pt;
+}
+.vscode-body h2.header.large,
+.vscode-body h3.header.large,
+.vscode-body h4.header.large,
+.vscode-body h5.header.large,
+.vscode-body h6.header.large {
+  font-size: 26.45pt;
+}
+.vscode-body h1 {
+  font-size: 24pt;
+}
+.vscode-body h1.title {
+  font-size: 50pt;
+  text-align: center;
+}
+.vscode-body h1.title.small {
+  font-size: 42.5pt;
+}
+.vscode-body h1.title.large {
+  font-size: 57.5pt;
+}
+.vscode-body h1.small {
+  font-size: 20.4pt;
+}
+.vscode-body h1.large {
+  font-size: 27.6pt;
+}
+.vscode-body h2 {
+  font-size: 20pt;
+}
+.vscode-body h2.small {
+  font-size: 17pt;
+}
+.vscode-body h2.large {
+  font-size: 23pt;
+}
+.vscode-body h3 {
+  font-size: 18pt;
+}
+.vscode-body h3.small {
+  font-size: 15.3pt;
+}
+.vscode-body h3.large {
+  font-size: 20.7pt;
+}
+.vscode-body h4 {
+  font-size: 18pt;
+}
+.vscode-body h4.small {
+  font-size: 15.3pt;
+}
+.vscode-body h4.large {
+  font-size: 20.7pt;
+}
+.vscode-body h5 {
+  font-size: 18pt;
+}
+.vscode-body h5.small {
+  font-size: 15.3pt;
+}
+.vscode-body h5.large {
+  font-size: 20.7pt;
+}
+.vscode-body h6 {
+  font-size: 18pt;
+}
+.vscode-body h6.small {
+  font-size: 15.3pt;
+}
+.vscode-body h6.large {
+  font-size: 20.7pt;
+}
+.vscode-body hr {
+  display: block;
+  border: 0;
+  margin: 20px;
+  height: 35px;
+  text-align: center;
+  background: url(hr.svg) 50% 50% no-repeat;
+  opacity: 0.5;
+}
+.vscode-body hr.small {
+  background: url(hr2.png) 50% 50% no-repeat;
+  background-size: 54px;
+}
+.vscode-body hr.large {
+  background: url(hr.svg) 50% 50% no-repeat;
+  background-size: 600px;
+}
+.vscode-body a[id^="¶"] {
+  float: left;
+  padding-top: 10px;
+  padding-left: 5px;
+  color: rgba(26, 26, 26, 0.7);
+  font-size: 12px;
+  cursor: pointer;
+}
+.vscode-body [data-pg]::before {
+  content: 'pg ' attr(data-pg);
+  color: rgba(26, 26, 26, 0.7);
+  padding: 0;
+  padding-left: 3px;
+  padding-right: 3px;
+  /*float: right;*/
+  margin-right: -4em;
+  font-size: 8pt;
+  font-style: normal;
+  position: absolute;
+  right: 12px;
+}
+.vscode-body span.li {
+  display: block;
+}
+.vscode-body span.li.li1 {
+  margin-left: 0em;
+}
+.vscode-body span.li.li2 {
+  margin-left: 1em;
+}
+.vscode-body span.li.li3 {
+  margin-left: 2em;
+}
+.vscode-body span.li.li4 {
+  margin-left: 3em;
+}
+.vscode-body span.li.li5 {
+  margin-left: 4em;
+}
+.vscode-body span.li.li6 {
+  margin-left: 5em;
+}
+.vscode-body span.li.li7 {
+  margin-left: 6em;
+}
+.vscode-body span.li.li8 {
+  margin-left: 7em;
+}
+.vscode-body span.li.li9 {
+  margin-left: 8em;
+}
+.vscode-body .footnotes {
+  margin-left: 70px;
+  margin-right: 40px;
+  font-family: GentiumPlus, 'Georgia', 'serif';
+  color: rgba(26, 26, 26, 0.7);
+  font-size: 80%;
+}
+.vscode-body .footnotes .-hidden {
+  display: none;
+}
+.vscode-body .footnotes .-num {
+  display: inline-block;
+  font-size: 80%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.vscode-body .footnotes .-text {
+  display: inline-block;
+}
+.vscode-body .title,
+.vscode-body .header {
+  margin-left: 40px;
+  margin-right: 45px;
+  position: relative;
+}
+.vscode-body .rulebelow {
+  text-transform: uppercase;
+}
+.vscode-body .bookgraphic {
+  text-transform: uppercase;
+}
+.vscode-body .width-80 {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.vscode-body .width-65 {
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.vscode-body .width-50 {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.vscode-body .width-45 {
+  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.vscode-body .width-30 {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.vscode-body .sacred,
+.vscode-body .bible,
+.vscode-body .muhammad,
+.vscode-body .quran,
+.vscode-body .jesus,
+.vscode-body .muh,
+.vscode-body [data-author] {
+  color: #1a1a1a;
+  font-style: italic;
+}
+.vscode-body .baha,
+.vscode-body [data-author="baha"] {
+  color: #804040;
+  font-style: italic;
+}
+.vscode-body .bab,
+.vscode-body [data-author="bab"] {
+  color: #466446;
+  font-style: italic;
+}
+.vscode-body .abd,
+.vscode-body [data-author="abd"] {
+  color: #294E66;
+  font-style: italic;
+}
+.vscode-body .shoghi,
+.vscode-body [data-author="shoghi"] {
+  /*color: #333333;*/
+  /*font-style: italic;*/
+  color: #1a1a1a;
+  font-style: normal;
+}
+.vscode-body .ali,
+.vscode-body [data-author="ali"],
+.vscode-body .tradition,
+.vscode-body [data-author="tradition"],
+.vscode-body .husayn,
+.vscode-body [data-author="husayn"] {
+  color: #1a1a1a;
+  font-style: normal;
+}
+.vscode-body .blockquote,
+.vscode-body .prayer {
+  padding-left: 3em;
+  padding-right: 1em;
+}
+.vscode-body img {
+  max-height: 65vh;
+  margin: 10px auto;
+  /*margin: 10px auto !important;*/
+  text-align: center;
+  display: block;
+}
+.vscode-body .illustration.left {
+  float: left;
+}
+.vscode-body .illustration.right {
+  float: right;
+}
+.vscode-body img.illustration.x-small {
+  max-height: 25vh;
+}
+.vscode-body img.illustration.small {
+  max-height: 45vh;
+}
+.vscode-body img.illustration.large {
+  max-height: 85vh;
+}
+.vscode-body img.illustration.x-large {
+  max-height: 105vh;
+}
+.vscode-body div.illustration {
+  width: 100%;
+  padding: 0 60px 2em;
+}
+.vscode-body div.illustration.content-description {
+  padding: 0px;
+}
