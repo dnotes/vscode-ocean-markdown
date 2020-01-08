@@ -2,6 +2,7 @@
 		"name": "ocean-markdown",
 		"displayName": "%ext.displayName%",
 		"description": "%ext.description%",
+		"publisher": "firmfoundation",
 		"version": "0.0.1",
 		"engines": {
 				"vscode": "^1.30.0"
@@ -15,14 +16,14 @@
 		"main": "./extension.js",
 		"contributes": {
 				"configuration": {
-					"title": "Ocean Markdown",
-					"properties": {
-						"oceanMarkdown.previewParagraphNumbers": {
-							"type": "boolean",
-							"default": true,
-							"description": "Show paragraph numbers in preview"
+						"title": "Ocean Markdown",
+						"properties": {
+								"oceanMarkdown.previewParagraphNumbers": {
+										"type": "boolean",
+										"default": true,
+										"description": "Show paragraph numbers in preview"
+								}
 						}
-					}
 				},
 				"markdown.previewStyles": [
 						"./preview/preview.css"
@@ -86,6 +87,7 @@
 		},
 		"scripts": {
 				"css": "node node_modules/.bin/lessc ./preview/preview.less ./preview/preview.css",
+				"package": "vsce package",
 				"test": "node ./test/runTest.js"
 		},
 		"devDependencies": {
@@ -98,6 +100,7 @@
 				"less": "^3.10.3",
 				"mocha": "^6.2.2",
 				"typescript": "^3.6.4",
+				"vsce": "^1.71.0",
 				"vscode-test": "^1.2.2"
 		},
 		"dependencies": {
