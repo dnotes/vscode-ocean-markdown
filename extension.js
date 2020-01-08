@@ -5,8 +5,10 @@
  */
 function activate(/* context */) {
   return {
-    extendMarkdownIt(/* md */) {
-      return require('ocean-markdown-it');
+    extendMarkdownIt(md) {
+      md = require('ocean-markdown-it')
+      md.use(require('markdown-it-auto-parnum'))
+      return md
     }
   };
 }

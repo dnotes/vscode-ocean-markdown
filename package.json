@@ -91,6 +91,7 @@
 				"vscode-test": "^1.2.2"
 		},
 		"dependencies": {
+				"markdown-it-auto-parnum": "^1",
 				"ocean-markdown-it": "^1"
 		}
 }
