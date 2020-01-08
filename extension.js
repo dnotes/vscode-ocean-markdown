@@ -1,4 +1,5 @@
-// const vscode = require('vscode');
+const vscode = require('vscode');
+const conf = vscode.workspace.getConfiguration('oceanMarkdown')
 
 /**
  * // @param {vscode.ExtensionContext} context
@@ -7,7 +8,7 @@ function activate(/* context */) {
   return {
     extendMarkdownIt(md) {
       md = require('ocean-markdown-it')
-      md.use(require('markdown-it-auto-parnum'), {headingSign: '¶'})
+      if (conf.previewParagraphNumbers) md.use(require('markdown-it-auto-parnum'), {headingSign: '¶'})
       return md
     }
   };
