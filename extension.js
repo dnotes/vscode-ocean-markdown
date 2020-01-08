@@ -7,7 +7,7 @@ function activate(/* context */) {
   return {
     extendMarkdownIt(md) {
       md = require('ocean-markdown-it')
-      md.use(require('markdown-it-auto-parnum'))
+      md.use(require('markdown-it-auto-parnum'), {headingSign: '¶'})
       return md
     }
   };

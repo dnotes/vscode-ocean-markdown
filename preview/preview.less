@@ -340,26 +340,23 @@ hr {
 // ============================================================================
 
 a[id^="¶"] {
-  float: left;
-  padding-top: 10px;
-  padding-left: 5px;
-  color: rgba(26, 26, 26, 0.7);
+  position:absolute;
+  left: -50px;
   font-size: 12px;
+  padding-left: 5px;
+  color: rgba(126,126,126,.7);
   cursor: pointer;
 }
-
-[data-pg]::before {
-  content: 'pg ' attr(data-pg);
-  color: rgba(26, 26, 26, 0.7);
-  padding: 0;
-  padding-left: 3px;
-  padding-right: 3px;
-  /*float: right;*/
-  margin-right: -4em;
-  font-size: 8pt;
-  font-style: normal;
-  position: absolute;
-  right: 12px;
+[data-pg] {
+  font-size: 12px;
+  color: rgba(126,126,126,.7);
+  user-select: none;
+  &::before {
+    content: "[pg ";
+  }
+  &::after {
+    content: "]";
+  }
 }
 
 // ============================================================================
