@@ -4,15 +4,15 @@ All notable changes to the Ocean Markdown extension will be documented in this f
 
 ## [Unreleased]
 
+- Commands:
+  - Toggle OFM
+  - Toggle paragraph numbers in preview
+  - Toggle page numbers in preview
 - Editing:
   - Bold
   - Italic
   - Bullet list continuation
   - Numbered list continuation
-- Commands:
-  - Toggle OFM
-  - Toggle paragraph numbers in preview
-  - Toggle page numbers in preview
 - Settings:
   - Use OFM
   - Show page numbers in preview
@@ -24,6 +24,8 @@ All notable changes to the Ocean Markdown extension will be documented in this f
 ## 0.x
 
 - Preview for OFM
+- Commands:
+- Editing:
 - Settings:
   - Number paragraphs in preview
 - Syntax highlighting:
