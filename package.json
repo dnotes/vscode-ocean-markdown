@@ -1,10 +1,10 @@
 {
 		"name": "ocean-markdown",
-		"displayName": "%ext.displayName%",
-		"description": "%ext.description%",
+		"displayName": "Ocean Markdown",
+		"description": "Implements Ocean-flavored Markdown in VS Code",
 		"publisher": "firmfoundation",
 		"license": "UNLICENSED",
-		"version": "0.0.1",
+		"version": "0.0.2",
 		"repository": "github:dnotes/vscode-ocean-markdown",
 		"engines": {
 				"vscode": "^1.30.0"
