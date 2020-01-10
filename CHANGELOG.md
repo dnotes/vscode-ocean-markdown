@@ -16,6 +16,7 @@ Beyond syntax highlighting and preview for Ocean-flavored Markdown, there are so
 - API:
   - Plugin system for adding converters from various sites
   - Plugin system for adding conversion actions
+  - System for defining metadata fields
 - Commands:
   - [OT] Convert to OFM from URL
   - [OT] Check Metadata (automatic on open) 
@@ -49,16 +50,8 @@ Beyond syntax highlighting and preview for Ocean-flavored Markdown, there are so
 
 - Preview for OFM
 - Commands:
-  - Toggle OFM
-  - Toggle paragraph numbers in preview
-  - Toggle page numbers in preview
-  - Toggle Ocean Tools ([OT])
 - Editing:
 - Settings:
-  - Use Ocean-flavored Markdown
-  - Use Ocean Tools [OT]
-  - Show page numbers in preview
-  - Number paragraphs in preview
 - Syntax highlighting:
   - Commonmark (base)
   - Blockquotes
