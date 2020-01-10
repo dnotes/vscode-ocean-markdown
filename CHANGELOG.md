@@ -2,15 +2,6 @@
 
 All notable changes to the Ocean Markdown extension will be documented in this file. Ocean Markdown follows semantic versioning.
 
-## Ocean tools
-[OT]: #ocean-tools
-
-Beyond syntax highlighting and preview for Ocean-flavored Markdown, there are some tools and commands useful for people editing whole collections of Markdown files, e.g. for a website or literary collection. These tools can be enabled with the following setting:
-
-```
-"oceanMarkdown.useOceanTools": true
-```
-
 ## [Unreleased]
 
 - API:
