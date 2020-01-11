@@ -14,8 +14,10 @@ All notable changes to the Ocean Markdown extension will be documented in this f
   - [OT] Edit metadata (automatic on create and convert)
   - [OT] Blank OFM file
 - Editing:
-  - Bold
-  - Italic
+  - **Paragraph numbering assistant**
+  - **Bold, italic, underline**
+  - **Headers**
+  - **Transliterated characters**
   - Bullet list continuation
   - Numbered list continuation
   - [OT] "Replace All" action (saves conversion action)
@@ -34,6 +36,7 @@ All notable changes to the Ocean Markdown extension will be documented in this f
     - Are not correctly identified after lists
   - Attributes:
     - Should be less prominent
+- **Front matter validation**
 - Compress with rollup
 - Full release
 
