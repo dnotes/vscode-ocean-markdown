@@ -106,7 +106,7 @@
 				"vscode-test": "^1.2.2"
 		},
 		"dependencies": {
-				"markdown-it": "^9.0.0",
+				"markdown-it": "^12.3.2",
 				"markdown-it-attrs": "^3",
 				"markdown-it-auto-parnum": "^1",
 				"ocean-markdown-it": "^1"
